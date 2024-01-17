@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia | Tarde | Noite</title>
+
+    <style>
+
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font : 30px normal Arial;
+            color: white;
+        }
+
+        div.frame {
+            width: 400px;
+            height: 350px;
+            background-color: rgb(157, 212, 212);
+            margin: auto;
+            margin-top: auto;
+            border-radius: 20px;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 200px;
+            border-radius: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body class="fundo">
+        <h1>Hora do Dia</h1>
+        <div class="frame">
+            <p id="paragrafo">Agora são : </p>
+            <img class="imagem" id="imagemDoDia" src="monk-1077839_1280.jpg" alt="Imagem de acordo com o horario do dia">
+        </div>
+
+    <script>
+
+        var horario = new Date()
+        var horas = horario.getHours()
+
+        var imagemDoDia = window.document.getElementById('imagemDoDia')
+
+        var paragrafo = window.document.getElementById('paragrafo')
+        paragrafo.innerHTML += horas
+
+        var fundo = document.querySelector('body.fundo');
+        
+        if(horas <= 12){
+          imagemDoDia.setAttribute('src', 'flower.jpg')
+          paragrafo.style.color = 'yellow'
+          fundo.style.backgroundColor = 'rgb(255, 255, 0)'
+        }
+
+        else if(horas > 12 && horas <= 18){
+            imagemDoDia.setAttribute('src', 'monk.jpg')
+            paragrafo.style.color = 'orange'
+            fundo.style.backgroundColor = 'rgb(255, 165, 0)'
+        }
+        else {
+            imagemDoDia.setAttribute('src', 'wolf.jpg')
+            paragrafo.style.color = 'black'
+            fundo.style.backgroundColor = 'rgb(000, 000, 20)'
+        }
+
+    </script>
+
+</body>
+</html>
