@@ -1,0 +1,10 @@
+Acessar o node pelo vscode
+node
+
+Para saber o tipo de dado
+typeof nome
+
+typeof NaN // number
+typeof [] // object
+
+typeof null // object

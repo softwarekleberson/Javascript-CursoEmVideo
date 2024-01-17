@@ -1,0 +1,6 @@
+//Sempre vem como string, deste modo ao usar '+' o js concatena
+//Transformando em Number(n1), o '+' irá somar
+
+//Caso queira converter de numero para string, use toString()
+
+

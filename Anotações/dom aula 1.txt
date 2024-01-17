@@ -1,0 +1,47 @@
+                    Pegar elementos comuns(Por marca)
+
+
+    Escrita
+
+/*Esse getElementsByTagName (pega todas as tags p, do html, posso trocar por outro, um h1, div etc)
+*/
+
+// o [0] pega o primeiro paragrafo, caso queira tudo tire ele
+
+var p1 = window.document.getElementsByTagName('p')[0]
+
+
+    Mudar Cor
+
+p1.style.color = 'yellow'
+
+
+
+
+                                Por Id
+
+ var id = window.document.getElementById('id')
+id.style.background = 'green'
+
+
+
+                            Query Selector
+
+// Seleciona elemto com base no css
+                    
+// Retorna uma NodeList de todos os elementos que correspondem ao seletor
+var elementos = document.querySelectorAll('div.classe');
+
+
+// Acessa o primeiro elemento da NodeList (índice 0)
+var primeiroElemento = elementos[0];
+
+
+// Acessa o segundo elemento da NodeList (índice 1)
+var segundoElemento = elementos[1];
+
+
+// Se você souber a posição do elemento que deseja acessar diretamente
+var terceiroElemento = elementos[2];
+
+

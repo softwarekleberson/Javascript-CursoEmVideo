@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando Estudo Dom</title>
+    <style>
+        body {
+            background-color: rgb(104, 104, 213);
+            font : normal 18px Arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Primeiros passos Dom</h1>
+    <p>Começa aqui aula 1</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> no javascript</p>
+
+    <div id="id">Clique aqui</div>
+    <div class="classe">Muito Legal isso </div>
+
+    <script>
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        corpo.style.backgroundColor = 'black'
+
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'red'
+
+        var id = window.document.getElementById('id')
+        id.style.background = 'green'
+
+        var seletor = window.document.querySelector('div.classe')
+        seletor.style.color = 'blue'
+    </script>
+
+</body>
+</html>

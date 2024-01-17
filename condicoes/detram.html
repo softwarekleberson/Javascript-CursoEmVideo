@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Checagem Detram</h1>
+
+    Digite a velocidade <input type="number" name="txtvel" id="txtvel"> Km
+    <input type="button" value="velocidade" onclick="checagem()">
+
+    <div id="res">Checagem : </div>
+
+    <script>
+       function checagem(){
+        
+        var res = document.getElementById('res')
+        var velocidadeMaxima = 60
+
+        var txtVel = document.getElementById('txtvel')
+        var velocidade = Number(txtVel.value)
+
+        if(velocidade > velocidadeMaxima){
+            res.innerHTML += `Multado, velociade ${velocidade} km. `
+        }
+        res.innerHTML += `Dirija com cinto`
+        
+       }
+    </script>
+</body>
+</html>

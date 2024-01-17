@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+
+            font: normal 20px Arial;
+            background-color: rgb(119, 119, 148);
+        }
+
+        p {
+            color: white;
+        }
+
+    </style>
+    <title>Trabalhando com Strings</title>
+</head>
+<body>
+    
+    <script>
+        var nome = prompt('Digite seu nome : ')
+        var salario = Number(prompt('Qual o seu salario'))
+
+        document.writeln(`<p> Seu nome possui <strong>${nome.length}</strong> caracteres <br></p>`)
+        document.writeln(`<p> Seu nome em maisculo é : ${nome.toUpperCase()} <br> </p>`)
+        document.writeln(`<p> Seu nome em minusculo é ${nome.toLowerCase()} <br> </p>`)
+
+        document.writeln(`<p> Seu salario é ${salario.toFixed(2)}</p>`)
+        if(isNaN(salario)){
+            alert('Não é numero')
+        }
+    </script>
+</body>
+</html>

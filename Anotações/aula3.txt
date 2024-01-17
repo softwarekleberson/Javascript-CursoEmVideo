@@ -1,0 +1,12 @@
+Operador ternario
+
+Composto por três partes
+* Comparação
+? o que acontece caso verdade
+: o que acontece caso false
+
+idade = 18
+idade >= 18 ?'maior de idade' :'menor de idade'
+
+idade >= 18 ? maior = true : maior = false
+maior = true
